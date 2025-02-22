@@ -4,3 +4,9 @@ body{
     background-color: #141217;
     color: white;
 }
+
+.nav-links{
+    font-family: Epilogue;
+    font-size: 18px;
+    font-weight: 400;
+}
