@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@theme{
+    --color-primary: #b550f8;
+    --color-grey: #f7f3f3;
+    --color-tag-blue: #172135;
+    --color-caption-purple: #ab9eb8;
+    --font-sans: 'Poppins', san-serif;
+    --font-epilogue: 'Epilogue', serif;
+}
+
 body{
     background-color: #141217;
     color: white;
@@ -9,4 +18,12 @@ body{
     font-family: Epilogue;
     font-size: 18px;
     font-weight: 400;
+}
+
+.custom-text{
+    font-family: var(--font-sans);
+}
+
+.epilogue{
+    font-family: var(--font-epilogue);
 }

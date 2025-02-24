@@ -1,44 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
     <title>Audrey Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="main container mx-auto pt-10">
-        <header>
-            <nav class="nav-links">
-                <div class="flex justify-between items-center">
-                    <a href="#" class="text-white text-xl font-bold"><img src="./img/AudreyOnyike.svg" alt="audrey-onyike" title></a>
-                    <!-- <button id="menu-toggle" class="text-white sm:hidden md:hidden lg:hidden focus:outline-none">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main max-w-custom container mx-auto pt-10">
+      <header>
+        <nav class="nav-links">
+          <div class="flex justify-between items-center">
+            <a href="#" class="text-white text-xl font-bold"
+              ><img src="./img/AudreyOnyike.svg" alt="audrey-onyike" title
+            /></a>
+            <!-- <button id="menu-toggle" class="text-white sm:hidden md:hidden lg:hidden focus:outline-none">
                         ☰
                     </button> -->
-                    <ul id="menu" class="flex space-x-6 text-white text-lg">
-                        <li><a href="#" class="hover:underline">Projects</a></li>
-                        <li><a href="#" class="hover:underline">About</a></li>
-                        <li><a href="#" class="hover:underline">My Resume</a></li>
-                    </ul>
-                </div>
-                <!-- <ul id="mobile-menu" class="hidden flex-col items-center text-white text-center space-y-4 md:hidden">
+            <ul id="menu" class="flex space-x-6 text-white text-lg">
+              <li><a href="#" class="hover:underline hover:text-primary">Projects</a></li>
+              <li><a href="#" class="hover:underline hover:text-primary">About</a></li>
+              <li><a href="#" class="hover:underline hover:text-primary">My Resume</a></li>
+            </ul>
+          </div>
+          <!-- <ul id="mobile-menu" class="hidden flex-col items-center text-white text-center space-y-4 md:hidden">
                     <li><a href="#" class="hover:underline">Projects</a></li>
                     <li><a href="#" class="hover:underline">About</a></li>
                     <li><a href="#" class="hover:underline">My Resume</a></li>
                 </ul> -->
-            </nav>
-        </header>
-        <!-- END OF HEADER -->
+        </nav>
+      </header>
+      <!-- END OF HEADER -->
 
-    </div>  
+      <section class="intro mt-5 pb-28">
+        <div class="flex justify-between mini-intro">
+          <div class="left-intro pt-28">
+            <h1 class="text-2xl mb-5">
+              Hello! I am <span class="text-primary">Audrey</span>. Product
+              Designer.
+            </h1>
+            <div class="user-caption text-2xl font-bold w-xl mb-5 font-bold">
+              I design beautiful, user-friendly web and mobile products.
+            </div>
+            <div class="button-block">
+              <button
+                class="bg-primary custom-text text-white rounded-3xl px-6 py-2 mr-4"
+              >
+                Contact Me
+              </button>
+              <button class="text-primary">My Resume</button>
+            </div>
+          </div>
+          <div class="right-intro">
+            <img src="./img/audrey.png" title="audrey" alt="audrey" />
+          </div>
+        </div>
+      </section>
+      <!-- END OF INTRO SECTION -->
+
+      <section class="portfolio">
+        <div class="portfolio-heading flex justify-between mb-10">
+            <h1 class="text-primary text-5xl font-medium">My Projects </h1>
+            <div>
+                <ul>
+                    <li>available for projects</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="projects flex justify-between mb-12 gap-5">
+            <div class="mini-project">
+                <div class="text-grey mb-4">2024</div>
+                <img class="rounded-sm mb-3" src="./img/projects/akilaah-app.jpg" alt="">
+                <div class="tags flex mb-7">
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Fintech</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Mobile</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Admin</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Design Library</button>
+                </div>
+                <div class="mb-9">
+                    <h2 class="text-2xl font-medium">Translating Akilaah's Web Experience Into a User-Centered Mobile App</h2>
+                </div>
+
+                <div class="main-stats flex justify-between mb-12">
+                    <div class="left-stat">
+                        <h2 class="text-2xl font-medium">30%</h2>
+                        <div class="text-caption-purple">increase in revenue from member contributions, driven by intuitive workflows and mobile accessibility.</div>
+                    </div>
+                    <div class="right-stat">
+                        <h2 class="text-2xl font-medium">35%</h2>
+                        <div class="text-caption-purple">rise in member registrations, expanding Akilaah’s user base among younger demographics.</div>
+                    </div>
+                </div>
+
+                <div class="button-block">
+                    <button class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">Visit Project &rarr;</button>
+                    <button class="font-epilogue font-medium">View Case Study &rarr;</button>
+                </div>
+            </div>
+
+            <div class="mini-project">
+                <div class="text-grey mb-4">2024</div>
+                <img class="rounded-sm mb-3" src="./img/projects/akilaah2.jpg" alt="">
+                <div class="tags flex mb-7">
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Fintech</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Web</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Admin</button>
+                </div>
+                <div class="mb-9">
+                    <h2 class="text-2xl font-medium">Simplifying Cooperative Management: Designing an Agent Portal for Easy Onboarding and Tracking</h2>
+                </div>
+
+                <div class="main-stats flex justify-between mb-12">
+                    <div class="left-stat">
+                        <h2 class="text-2xl font-medium">40%</h2>
+                        <div class="text-caption-purple">increase in revenue from member contributions, driven by intuitive workflows and mobile accessibility.</div>
+                    </div>
+                    <div class="right-stat">
+                        <h2 class="text-2xl font-medium">20%</h2>
+                        <div class="text-caption-purple">rise in member registrations, expanding Akilaah’s user base among younger demographics.</div>
+                    </div>
+                </div>
+
+                <div class="button-block">
+                    <button class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">Visit Project &rarr;</button>
+                    <button class="font-epilogue font-medium">View Case Study &rarr;</button>
+                </div>
+            </div>         
+        </div>
+
+        <div class="projects flex justify-between mb-12 gap-5">
+            <div class="mini-project">
+                <div class="text-grey mb-4">2024</div>
+                <img class="rounded-sm mb-3" src="./img/projects/akilaah-app.jpg" alt="">
+                <div class="tags flex mb-7">
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Fintech</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Mobile</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Admin</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Design Library</button>
+                </div>
+                <div class="mb-9">
+                    <h2 class="text-2xl font-medium">Translating Akilaah's Web Experience Into a User-Centered Mobile App</h2>
+                </div>
+
+                <div class="main-stats flex justify-between mb-12">
+                    <div class="left-stat">
+                        <h2 class="text-2xl font-medium">30%</h2>
+                        <div class="text-caption-purple">increase in revenue from member contributions, driven by intuitive workflows and mobile accessibility.</div>
+                    </div>
+                    <div class="right-stat">
+                        <h2 class="text-2xl font-medium">35%</h2>
+                        <div class="text-caption-purple">rise in member registrations, expanding Akilaah’s user base among younger demographics.</div>
+                    </div>
+                </div>
+
+                <div class="button-block">
+                    <button class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">Visit Project &rarr;</button>
+                    <button class="font-epilogue font-medium">View Case Study &rarr;</button>
+                </div>
+            </div>
+
+            <div class="mini-project">
+                <div class="text-grey mb-4">2024</div>
+                <img class="rounded-sm mb-3" src="./img/projects/akilaah-app.jpg" alt="">
+                <div class="tags flex mb-7">
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Fintech</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Mobile</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Admin</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Design Library</button>
+                </div>
+                <div class="mb-9">
+                    <h2 class="text-2xl font-medium">Translating Akilaah's Web Experience Into a User-Centered Mobile App</h2>
+                </div>
+
+                <div class="main-stats flex justify-between mb-12">
+                    <div class="left-stat">
+                        <h2 class="text-2xl font-medium">30%</h2>
+                        <div class="text-caption-purple">increase in revenue from member contributions, driven by intuitive workflows and mobile accessibility.</div>
+                    </div>
+                    <div class="right-stat">
+                        <h2 class="text-2xl font-medium">35%</h2>
+                        <div class="text-caption-purple">rise in member registrations, expanding Akilaah’s user base among younger demographics.</div>
+                    </div>
+                </div>
+
+                <div class="button-block">
+                    <button class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">Visit Project &rarr;</button>
+                    <button class="font-epilogue font-medium">View Case Study &rarr;</button>
+                </div>
+            </div>         
+        </div>
+
+        <div class="projects flex justify-between mb-12 gap-5">
+            <div class="mini-project">
+                <div class="text-grey mb-4">2024</div>
+                <img class="rounded-sm mb-3" src="./img/projects/akilaah-app.jpg" alt="">
+                <div class="tags flex mb-7">
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Fintech</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Mobile</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Admin</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Design Library</button>
+                </div>
+                <div class="mb-9">
+                    <h2 class="text-2xl font-medium">Translating Akilaah's Web Experience Into a User-Centered Mobile App</h2>
+                </div>
+
+                <div class="main-stats flex justify-between mb-12">
+                    <div class="left-stat">
+                        <h2 class="text-2xl font-medium">30%</h2>
+                        <div class="text-caption-purple">increase in revenue from member contributions, driven by intuitive workflows and mobile accessibility.</div>
+                    </div>
+                    <div class="right-stat">
+                        <h2 class="text-2xl font-medium">35%</h2>
+                        <div class="text-caption-purple">rise in member registrations, expanding Akilaah’s user base among younger demographics.</div>
+                    </div>
+                </div>
+
+                <div class="button-block">
+                    <button class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">Visit Project &rarr;</button>
+                    <button class="font-epilogue font-medium">View Case Study &rarr;</button>
+                </div>
+            </div>
+
+            <div class="mini-project">
+                <div class="text-grey mb-4">2024</div>
+                <img class="rounded-sm mb-3" src="./img/projects/akilaah-app.jpg" alt="">
+                <div class="tags flex mb-7">
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Fintech</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Mobile</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Admin</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Design Library</button>
+                </div>
+                <div class="mb-9">
+                    <h2 class="text-2xl font-medium">Translating Akilaah's Web Experience Into a User-Centered Mobile App</h2>
+                </div>
+
+                <div class="main-stats flex justify-between mb-12">
+                    <div class="left-stat">
+                        <h2 class="text-2xl font-medium">30%</h2>
+                        <div class="text-caption-purple">increase in revenue from member contributions, driven by intuitive workflows and mobile accessibility.</div>
+                    </div>
+                    <div class="right-stat">
+                        <h2 class="text-2xl font-medium">35%</h2>
+                        <div class="text-caption-purple">rise in member registrations, expanding Akilaah’s user base among younger demographics.</div>
+                    </div>
+                </div>
+
+                <div class="button-block">
+                    <button class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">Visit Project &rarr;</button>
+                    <button class="font-epilogue font-medium">View Case Study &rarr;</button>
+                </div>
+            </div>         
+        </div>
+
+        <div class="projects flex justify-between mb-12 gap-5">
+            <div class="mini-project">
+                <div class="text-grey mb-4">2024</div>
+                <img class="rounded-sm mb-3" src="./img/projects/akilaah-app.jpg" alt="">
+                <div class="tags flex mb-7">
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Fintech</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Mobile</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Admin</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Design Library</button>
+                </div>
+                <div class="mb-9">
+                    <h2 class="text-2xl font-medium">Translating Akilaah's Web Experience Into a User-Centered Mobile App</h2>
+                </div>
+
+                <div class="main-stats flex justify-between mb-12">
+                    <div class="left-stat">
+                        <h2 class="text-2xl font-medium">30%</h2>
+                        <div class="text-caption-purple">increase in revenue from member contributions, driven by intuitive workflows and mobile accessibility.</div>
+                    </div>
+                    <div class="right-stat">
+                        <h2 class="text-2xl font-medium">35%</h2>
+                        <div class="text-caption-purple">rise in member registrations, expanding Akilaah’s user base among younger demographics.</div>
+                    </div>
+                </div>
+
+                <div class="button-block">
+                    <button class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">Visit Project &rarr;</button>
+                    <button class="font-epilogue font-medium">View Case Study &rarr;</button>
+                </div>
+            </div>
+
+            <div class="mini-project">
+                <div class="text-grey mb-4">2024</div>
+                <img class="rounded-sm mb-3" src="./img/projects/akilaah-app.jpg" alt="">
+                <div class="tags flex mb-7">
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Fintech</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Mobile</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Admin</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Design Library</button>
+                </div>
+                <div class="mb-9">
+                    <h2 class="text-2xl font-medium">Translating Akilaah's Web Experience Into a User-Centered Mobile App</h2>
+                </div>
+
+                <div class="main-stats flex justify-between mb-12">
+                    <div class="left-stat">
+                        <h2 class="text-2xl font-medium">30%</h2>
+                        <div class="text-caption-purple">increase in revenue from member contributions, driven by intuitive workflows and mobile accessibility.</div>
+                    </div>
+                    <div class="right-stat">
+                        <h2 class="text-2xl font-medium">35%</h2>
+                        <div class="text-caption-purple">rise in member registrations, expanding Akilaah’s user base among younger demographics.</div>
+                    </div>
+                </div>
+
+                <div class="button-block">
+                    <button class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">Visit Project &rarr;</button>
+                    <button class="font-epilogue font-medium">View Case Study &rarr;</button>
+                </div>
+            </div>         
+        </div>
+
+        <div class="projects flex justify-between mb-12 gap-5">
+            <div class="mini-project">
+                <div class="text-grey mb-4">2024</div>
+                <img class="rounded-sm mb-3" src="./img/projects/akilaah-app.jpg" alt="">
+                <div class="tags flex mb-7">
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Fintech</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Mobile</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Admin</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Design Library</button>
+                </div>
+                <div class="mb-9">
+                    <h2 class="text-2xl font-medium">Translating Akilaah's Web Experience Into a User-Centered Mobile App</h2>
+                </div>
+
+                <div class="main-stats flex justify-between mb-12">
+                    <div class="left-stat">
+                        <h2 class="text-2xl font-medium">30%</h2>
+                        <div class="text-caption-purple">increase in revenue from member contributions, driven by intuitive workflows and mobile accessibility.</div>
+                    </div>
+                    <div class="right-stat">
+                        <h2 class="text-2xl font-medium">35%</h2>
+                        <div class="text-caption-purple">rise in member registrations, expanding Akilaah’s user base among younger demographics.</div>
+                    </div>
+                </div>
+
+                <div class="button-block">
+                    <button class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">Visit Project &rarr;</button>
+                    <button class="font-epilogue font-medium">View Case Study &rarr;</button>
+                </div>
+            </div>
+
+            <div class="mini-project">
+                <div class="text-grey mb-4">2024</div>
+                <img class="rounded-sm mb-3" src="./img/projects/akilaah-app.jpg" alt="">
+                <div class="tags flex mb-7">
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Fintech</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Mobile</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Admin</button>
+                    <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">Design Library</button>
+                </div>
+                <div class="mb-9">
+                    <h2 class="text-2xl font-medium">Translating Akilaah's Web Experience Into a User-Centered Mobile App</h2>
+                </div>
+
+                <div class="main-stats flex justify-between mb-12">
+                    <div class="left-stat">
+                        <h2 class="text-2xl font-medium">30%</h2>
+                        <div class="text-caption-purple">increase in revenue from member contributions, driven by intuitive workflows and mobile accessibility.</div>
+                    </div>
+                    <div class="right-stat">
+                        <h2 class="text-2xl font-medium">35%</h2>
+                        <div class="text-caption-purple">rise in member registrations, expanding Akilaah’s user base among younger demographics.</div>
+                    </div>
+                </div>
+
+                <div class="button-block">
+                    <button class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">Visit Project &rarr;</button>
+                    <button class="font-epilogue font-medium">View Case Study &rarr;</button>
+                </div>
+            </div>         
+        </div>
+        
+
+      </section><!-- END OF MAIN PORTFOLIO SECTION -->
+    </div><!-- END OF MAIN CONTAINER SECTION -->
 
     <script>
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
         });
     </script>
-</body>
+  </body>
 </html>
