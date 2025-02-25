@@ -10,6 +10,8 @@
     --font-epilogue: 'Epilogue', serif;
     --tracking-tightest: -3px;
     --font-source: "Source Sans 3", serif;
+    --color-bat-black: #1e1a23;
+    --color-subtle-grey: #302928;
 }
 
 body{
