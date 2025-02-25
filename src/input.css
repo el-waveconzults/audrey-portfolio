@@ -3,10 +3,13 @@
 @theme{
     --color-primary: #b550f8;
     --color-grey: #f7f3f3;
+    --color-grayish: #e3e8ed;
     --color-tag-blue: #172135;
     --color-caption-purple: #ab9eb8;
     --font-sans: 'Poppins', san-serif;
     --font-epilogue: 'Epilogue', serif;
+    --tracking-tightest: -3px;
+    --font-source: "Source Sans 3", serif;
 }
 
 body{

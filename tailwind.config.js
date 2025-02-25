@@ -1,7 +1,9 @@
 module.exports = {
     content: ["./src/**/*.{.html,js}"],
-    theme: {
-      extend: {
+  theme: {
+      
+    extend: {
+        
         maxWidth: {
         'custom': '1440px',
         },

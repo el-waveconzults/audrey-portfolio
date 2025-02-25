@@ -37,9 +37,12 @@
     );
     --color-primary: #b550f8;
     --color-grey: #f7f3f3;
+    --color-grayish: #e3e8ed;
     --color-tag-blue: #172135;
     --color-caption-purple: #ab9eb8;
     --font-epilogue: 'Epilogue', serif;
+    --tracking-tightest: -3px;
+    --font-source: "Source Sans 3", serif;
   }
 }
 @layer base {
@@ -205,11 +208,17 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
+  }
+  .mr-3 {
+    margin-right: calc(var(--spacing) * 3);
   }
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
@@ -229,6 +238,9 @@
   .mb-7 {
     margin-bottom: calc(var(--spacing) * 7);
   }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
   .mb-9 {
     margin-bottom: calc(var(--spacing) * 9);
   }
@@ -237,6 +249,18 @@
   }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
+  }
+  .mb-16 {
+    margin-bottom: calc(var(--spacing) * 16);
+  }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
+  }
+  .mb-28 {
+    margin-bottom: calc(var(--spacing) * 28);
+  }
+  .ml-1 {
+    margin-left: calc(var(--spacing) * 1);
   }
   .flex {
     display: flex;
@@ -303,6 +327,9 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -320,6 +347,9 @@
   }
   .font-epilogue {
     font-family: var(--font-epilogue);
+  }
+  .font-source {
+    font-family: var(--font-source);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -349,8 +379,15 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .tracking-tightest {
+    --tw-tracking: var(--tracking-tightest);
+    letter-spacing: var(--tracking-tightest);
+  }
   .text-caption-purple {
     color: var(--color-caption-purple);
+  }
+  .text-grayish {
+    color: var(--color-grayish);
   }
   .text-grey {
     color: var(--color-grey);
@@ -360,6 +397,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .opacity-40 {
+    opacity: 40%;
   }
   .hover\:text-primary {
     &:hover {
@@ -423,6 +463,10 @@ body {
   initial-value: 0;
 }
 @property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
   syntax: "*";
   inherits: false;
 }
