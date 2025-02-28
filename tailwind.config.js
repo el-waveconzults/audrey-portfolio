@@ -3,7 +3,6 @@ module.exports = {
   theme: {
       
     extend: {
-        
         maxWidth: {
         'custom': '1440px',
         },

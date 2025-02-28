@@ -15,6 +15,7 @@
 }
 
 body{
+    min-width: 40rem;
     background-color: #141217;
     color: white;
 }
