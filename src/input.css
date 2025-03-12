@@ -12,10 +12,11 @@
     --font-source: "Source Sans 3", serif;
     --color-bat-black: #1e1a23;
     --color-subtle-grey: #302928;
+    --breakpoint-xs: 20rem;
 }
 
 body{
-    min-width: 48rem;
+    /* min-width: 48rem; */
     background-color: #141217;
     color: white;
 }

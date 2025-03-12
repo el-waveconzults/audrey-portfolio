@@ -5,8 +5,13 @@
     --font-sans: 'Poppins', san-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(0.637 0.237 25.331);
+    --color-amber-500: oklch(0.769 0.188 70.08);
+    --color-green-500: oklch(0.723 0.219 149.579);
+    --color-blue-500: oklch(0.623 0.214 259.815);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-sm: 24rem;
     --container-xl: 36rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
@@ -192,6 +197,9 @@
 @layer utilities {
   .container {
     width: 100%;
+    @media (width >= 20rem) {
+      max-width: 20rem;
+    }
     @media (width >= 40rem) {
       max-width: 40rem;
     }
@@ -232,6 +240,9 @@
   .mr-7 {
     margin-right: calc(var(--spacing) * 7);
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
   }
@@ -268,6 +279,9 @@
   .ml-1 {
     margin-left: calc(var(--spacing) * 1);
   }
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
+  }
   .flex {
     display: flex;
   }
@@ -277,14 +291,23 @@
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
+  .w-3\/4 {
+    width: calc(3/4 * 100%);
+  }
   .w-xl {
     width: var(--container-xl);
+  }
+  .max-w-sm {
+    max-width: var(--container-sm);
   }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -311,6 +334,9 @@
       margin-inline-start: calc(calc(var(--spacing) * 6) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
     }
+  }
+  .overflow-hidden {
+    overflow: hidden;
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
@@ -362,6 +388,9 @@
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
+  }
+  .pt-2\.5 {
+    padding-top: calc(var(--spacing) * 2.5);
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
@@ -457,9 +486,94 @@
       outline-style: none;
     }
   }
+  .xs\:flex {
+    @media (width >= 20rem) {
+      display: flex;
+    }
+  }
+  .xs\:flex-col {
+    @media (width >= 20rem) {
+      flex-direction: column;
+    }
+  }
+  .xs\:flex-wrap {
+    @media (width >= 20rem) {
+      flex-wrap: wrap;
+    }
+  }
+  .xs\:bg-green-500 {
+    @media (width >= 20rem) {
+      background-color: var(--color-green-500);
+    }
+  }
+  .sm\:mx-0 {
+    @media (width >= 40rem) {
+      margin-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .sm\:mt-3 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * 3);
+    }
+  }
+  .sm\:mt-6 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:flex {
+    @media (width >= 40rem) {
+      display: flex;
+    }
+  }
   .sm\:hidden {
     @media (width >= 40rem) {
       display: none;
+    }
+  }
+  .sm\:w-full {
+    @media (width >= 40rem) {
+      width: 100%;
+    }
+  }
+  .sm\:flex-col {
+    @media (width >= 40rem) {
+      flex-direction: column;
+    }
+  }
+  .sm\:flex-wrap {
+    @media (width >= 40rem) {
+      flex-wrap: wrap;
+    }
+  }
+  .sm\:justify-center {
+    @media (width >= 40rem) {
+      justify-content: center;
+    }
+  }
+  .sm\:bg-red-500 {
+    @media (width >= 40rem) {
+      background-color: var(--color-red-500);
+    }
+  }
+  .sm\:pt-10 {
+    @media (width >= 40rem) {
+      padding-top: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:text-center {
+    @media (width >= 40rem) {
+      text-align: center;
+    }
+  }
+  .sm\:text-left {
+    @media (width >= 40rem) {
+      text-align: left;
+    }
+  }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
     }
   }
   .md\:hidden {
@@ -467,14 +581,43 @@
       display: none;
     }
   }
+  .md\:w-xl {
+    @media (width >= 48rem) {
+      width: var(--container-xl);
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:flex-wrap {
+    @media (width >= 48rem) {
+      flex-wrap: wrap;
+    }
+  }
+  .md\:bg-amber-500 {
+    @media (width >= 48rem) {
+      background-color: var(--color-amber-500);
+    }
+  }
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
     }
   }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
+    }
+  }
+  .lg\:bg-blue-500 {
+    @media (width >= 64rem) {
+      background-color: var(--color-blue-500);
+    }
+  }
 }
 body {
-  min-width: 48rem;
   background-color: #141217;
   color: white;
 }
