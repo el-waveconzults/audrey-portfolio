@@ -202,6 +202,9 @@
   }
 }
 @layer utilities {
+  .visible {
+    visibility: visible;
+  }
   .container {
     width: 100%;
     @media (width >= 20rem) {
@@ -237,6 +240,15 @@
   }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-\[11\] {
+    margin-top: 11;
+  }
+  .mt-\[83px\] {
+    margin-top: 83px;
+  }
+  .mt-\[110px\] {
+    margin-top: 110px;
   }
   .mr-1 {
     margin-right: calc(var(--spacing) * 1);
@@ -283,8 +295,14 @@
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
   }
+  .mb-11 {
+    margin-bottom: calc(var(--spacing) * 11);
+  }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
+  }
+  .mb-14 {
+    margin-bottom: calc(var(--spacing) * 14);
   }
   .mb-15 {
     margin-bottom: calc(var(--spacing) * 15);
@@ -316,6 +334,9 @@
   .hidden {
     display: none;
   }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
@@ -345,6 +366,9 @@
   }
   .w-8 {
     width: calc(var(--spacing) * 8);
+  }
+  .w-\[32\] {
+    width: 32;
   }
   .w-\[32px\] {
     width: 32px;
