@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Audrey Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container  mx-auto pt-10">
+
+      <!-- <header class="xs:bg-green-500 sm:bg-red-500 md:bg-amber-500 lg:bg-blue-500"> -->
+      <header class="">
+        <nav class="nav-links">
+          <div class="flex justify-between items-center">
+            <a href="index.html" class="text-white text-xl font-bold text-center sm:text-left"
+              ><img src="./img/AudreyOnyike.svg" alt="audrey-onyike" class="mx-auto sm:mx-0"
+            /></a>
+
+            
+            <!-- Hamburger Button -->
+            <button id="menu-toggle" class="text-white md:hidden lg:hidden focus:outline-none">
+              ☰
+             </button>
+            <!-- Navigation Links (Hidden on small screens) -->
+            <ul id="menu" class="hidden md:flex space-x-6 text-white text-lg">
+              <li>
+                <a href="#" class="hover:underline hover:text-primary"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="about-me.html" class="hover:underline hover:text-primary">About</a>
+              </li>
+              <li>
+                <a href="case-study1-akilah.html" class="hover:underline hover:text-primary"
+                  >My Resume</a
+                >
+              </li>
+            </ul>
+
+             
+          </div>
+
+          <!-- Mobile Menu (Hidden by default) -->
+          <ul id="mobile-menu" class="hidden flex-col items-center text-white text-center space-y-4 sm:hidden">
+                    <li><a href="#" class="hover:underline">Projects</a></li>
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li><a href="#" class="hover:underline">My Resume</a></li>
+          </ul>
+        </nav>
+        <!-- END OF NAV LINKS -->
+      </header>
+      <!-- END OF HEADER -->
+
+      <section class="intro mt-5 pb-28">
+        <div class="flex flex-col sm:flex-col md:flex-row justify-between mini-intro">
+          <div class="left-intro pt-28 sm:pt-10">
+            <h1 class="text-2xl mb-5">
+              Hello! I am <span class="text-primary">Audrey</span>. Product
+              Designer.
+            </h1>
+            <div class="user-caption text-2xl font-bold md:w-xl mb-5 font-bold">
+              I design beautiful, user-friendly web and mobile products.
+            </div>
+            <div class="button-block">
+              <button
+                class="bg-primary custom-text   text-white rounded-3xl px-6 py-2 mr-4"
+              >
+                Contact Me
+              </button>
+              <button class="text-primary">My Resume</button>
+            </div>
+          </div>
+          <div class="right-intro sm:mt-6 sm:w-full sm:flex sm:justify-center">
+            <img src="./img/audrey.png" title="audrey" alt="audrey" class="w-3/4 sm:w-full max-w-sm" />
+          </div>
+        </div>
+      </section>
+      <!-- END OF INTRO SECTION -->
+
+      <section class="portfolio mb-28">
+        <div class="portfolio-heading flex xs:flex-col sm:flex-col md:flex-row justify-between mb-10">
+          <h1 class="text-primary text-5xl font-medium sm:text-center">My Projects</h1>
+          <div class="sm:text-center sm:mt-3">
+            <ul>
+              <li>available for projects</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- START OF PROJECTS -->
+        <div class="projects flex xs:flex-col sm:flex-col md:flex-row md:justify-between gap-5 sm:justify-between justify-between mb-12">
+          <div class="mini-project xs:w-full sm:w-full w-1/2">
+            <div class="text-grey mb-4">2024</div>
+            <img
+              class="rounded-sm mb-3 w-full h-auto"
+              src="./img/projects/akilaah-app.jpg"
+              alt=""
+            />
+            <div class="tags flex mb-7">
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Fintech
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Mobile
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Admin
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Design Library
+              </button>
+            </div>
+            <div class="mb-9">
+              <h2 class="text-2xl font-medium">
+                Translating Akilaah's Web Experience Into a User-Centered Mobile
+                App
+              </h2>
+            </div>
+
+            <div class="main-stats flex justify-between mb-12">
+              <div class="left-stat">
+                <h2 class="text-2xl font-medium">30%</h2>
+                <div class="text-caption-purple">
+                  increase in revenue from member contributions, driven by
+                  intuitive workflows and mobile accessibility.
+                </div>
+              </div>
+              <div class="right-stat">
+                <h2 class="text-2xl font-medium">35%</h2>
+                <div class="text-caption-purple">
+                  rise in member registrations, expanding Akilaah’s user base
+                  among younger demographics.
+                </div>
+              </div>
+            </div>
+
+            <div class="button-block">
+              <a href="https://apps.apple.com/us/app/akilaah/id6670462885">
+                <button
+                class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7"
+              >
+               <a href="">Download App &rarr;</a> 
+              </button>
+              </a>
+              
+              <button class="font-epilogue font-medium">
+               <a href="./case-study1-akilah-mobile-app.html">View Case Study &rarr;</a> 
+              </button>
+            </div>
+          </div>
+
+          <div class="mini-project xs:w-full sm:w-full w-1/2">
+            <div class="text-grey mb-4">2024</div>
+            <img
+              class="rounded-sm mb-3 w-full h-auto"
+              src="./img/projects/akilaah2.jpg"
+              alt=""
+            />
+
+            <div class="tags flex mb-7">
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Fintech
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Web
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Admin
+              </button>
+            </div>
+            <div class="mb-9">
+              <h2 class="text-2xl font-medium">
+                Simplifying Cooperative Management: Designing an Agent Portal
+                for Easy Onboarding and Tracking
+              </h2>
+            </div>
+
+            <div class="main-stats flex justify-between gap-2.5 mb-12">
+              <div class="left-stat">
+                <h2 class="text-2xl font-medium">40%</h2>
+                <div class="text-caption-purple">
+                  improvement in operational efficiency.
+                </div>
+              </div>
+              <div class="right-stat">
+                <h2 class="text-2xl font-medium">20%</h2>
+                <div class="text-caption-purple">
+                  Increase in member satisfaction.
+                </div>
+              </div>
+            </div>
+
+            <div class="button-block">
+              <a href="https://www.akilaah.com/sign-up">
+                <button
+                class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7"
+                >
+               <a href="">Visit Project &rarr;</a> 
+                </button>
+              </a>
+              
+              <button class="font-epilogue font-medium">
+              <a href="./case-study2-akilah-agent-portal.html">View Case Study &rarr;</a>  
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects flex xs:flex-col  sm:flex-col md:flex-row justify-between mb-12 gap-5">
+          <div class="mini-project xs:w-full sm:w-full w-1/2">
+            <div class="text-grey mb-4">2024</div>
+            <img
+              class="rounded-sm mb-3 w-full h-auto"
+              src="./img/projects/majfintech.jpg"
+              alt=""
+            />
+            <div class="tags flex mb-7">
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Web
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Mobile
+              </button>
+            </div>
+            <div class="mb-9">
+              <h2 class="text-2xl font-medium">
+                Redesigning to Enhance User Experience and Boost Engagement on Majfintech’s Website
+              </h2>
+            </div>
+
+            <div class="main-stats flex justify-between mb-12">
+              <div class="left-stat w-1/2">
+                <h2 class="text-2xl font-medium">20%</h2>
+                <div class="text-caption-purple">
+                  reduction in bounce rates
+                </div>
+              </div>
+              <div class="right-stat w-1/2">
+                <h2 class="text-2xl font-medium">40%</h2>
+                <div class="text-caption-purple">
+                  improvement in mobile traffic, driven by responsive design
+                </div>
+              </div>
+            </div>
+
+            <div class="button-block">
+              <a href="https://www.majfintech.com">
+                <button
+                class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7"
+              >
+                Visit Project &rarr;
+              </button>
+              </a>
+              
+              <button class="font-epilogue font-medium">
+              <a href="./case-study3-akilah-maj-website.html">View Case Study &rarr;</a>  
+              </button>
+            </div>
+          </div>
+
+          <div class="mini-project xs:w-full sm:w-full w-1/2">
+            <div class="text-grey mb-4">2024</div>
+            <img
+              class="rounded-sm mb-3 w-full h-auto"
+              src="./img/projects/qn-search-app.jpg"
+              alt=""
+            />
+            <div class="tags flex mb-7">
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Fintech
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Mobile
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Admin
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Design Library
+              </button>
+            </div>
+            <div class="mb-9">
+              <h2 class="text-2xl font-medium">
+                Translating Akilaah's Web Experience Into a User-Centered Mobile
+                App
+              </h2>
+            </div>
+
+            <div class="main-stats flex justify-between mb-12">
+              <div class="left-stat">
+                <h2 class="text-2xl font-medium">30%</h2>
+                <div class="text-caption-purple">
+                  increase in revenue from member contributions, driven by
+                  intuitive workflows and mobile accessibility.
+                </div>
+              </div>
+              <div class="right-stat">
+                <h2 class="text-2xl font-medium">35%</h2>
+                <div class="text-caption-purple">
+                  rise in member registrations, expanding Akilaah’s user base
+                  among younger demographics.
+                </div>
+              </div>
+            </div>
+
+            <div class="button-block">
+              <button
+                class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7"
+              >
+                Visit Project &rarr;
+              </button>
+              <button class="font-epilogue font-medium">
+                View Case Study &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects flex xs:flex-col sm:flex-col md:flex-row justify-between mb-12 gap-5">
+          <div class="mini-project xs:w-full sm:w-full w-1/2">
+            <div class="text-grey mb-4">2024</div>
+            <img
+              class="rounded-sm mb-3 w-full h-auto"
+              src="./img/projects/akilaah3-app.png"
+              alt=""
+            />
+            <div class="tags flex mb-7">
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Web
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Mobile
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Fintech
+              </button>
+              
+            </div>
+            <div class="mb-9">
+              <h2 class="text-2xl font-medium">
+                Akilaah.com
+              </h2>
+            </div>
+
+            <div class="main-stats flex justify-between mb-12">
+              <div class="left-stat">
+                <div class="text-caption-purple">
+                  AKILAAH is a pioneering digital cooperative platform transforming how financial services and welfare support are accessed by everyone.
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="button-block">
+              <a href="https://www.akilaah.com/ "><button
+                class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7"
+              >
+                Visit Project &rarr;
+              </button></a>
+              
+              
+            </div>
+          </div>
+
+          <div class="mini-project xs:w-full sm:w-full w-1/2">
+            <div class="text-grey mb-4">2023</div>
+            <img
+              class="rounded-sm mb-3 w-full h-auto"
+              src="./img/projects/konvey-app.png"
+              alt=""
+            />
+            <div class="tags flex mb-7">
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Web
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                User Interface
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                SaaS
+              </button>
+            </div>
+            <div class="mb-9">
+              <h2 class="text-2xl font-medium">
+                Konvey.app
+              </h2>
+            </div>
+
+            <div class="main-stats flex justify-between mb-12">
+              <div class="left-stat">
+                <div class="text-caption-purple">
+                  Konvey: A video recording software that replaces back-and-forth emails and meetings with simple video messaging
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="button-block">
+              <a href="https://konvey.app/">
+                <button
+                class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7"
+              >
+                Visit Project &rarr;
+              </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects flex xs:flex-col sm:flex-col md:flex-row justify-between mb-12 gap-5">
+          <div class="mini-project xs:w-full sm:w-full w-1/2">
+            <div class="text-grey mb-4">2024</div>
+            <img
+              class="rounded-sm mb-3 w-full h-auto"
+              src="./img/projects/real-estate-app.png"
+              alt=""
+            />
+            <div class="tags flex mb-7">
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Web
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Mobile
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Fintech
+              </button>
+            </div>
+            <div class="mb-9">
+              <h2 class="text-2xl font-medium">
+                Boingestates.com
+              </h2>
+            </div>
+
+            <div class="main-stats mb-12">
+              <p class="text-caption-purple">A real estate development company that provides housing & Real Estate investment solutions to individuals, groups & corporate bodies</p>
+            </div>
+
+            <div class="button-block">
+              <button
+                class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7"
+              >
+               <a href="https://boingestates.com/home">Visit Project &rarr;</a> 
+              </button>
+            </div>
+          </div>
+
+          <div class="mini-project xs:w-full sm:w-full w-1/2">
+            <div class="text-grey mb-4">2019</div>
+            <img
+              class="rounded-sm mb-3 w-full h-auto"
+              src="./img/projects/work-io-app.png"
+              alt=""
+            />
+            <div class="tags flex mb-7">
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Web
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                User Interface
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Practice
+              </button>
+            </div>
+            <div class="mb-9">
+              <h2 class="text-2xl font-medium">
+                UI Challenges
+              </h2>
+            </div>
+
+            <div class="main-stats flex justify-between mb-12">
+              <div class="left-stat">
+                <div class="text-caption-purple">
+                  These challenges helped me think logically and improve my problem-solving and design skills.
+                </div>
+              </div>
+            </div>
+
+            <div class="button-block">
+              <button disabled
+                class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7"
+              >
+                Visit Project &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects flex xs:flex-col sm:flex-col md:flex-row justify-between mb-12 gap-5">
+          <div class="mini-project xs:w-full sm:w-full w-1/2">
+            <div class="text-grey mb-4">2021</div>
+            <img
+              class="rounded-sm mb-3 w-full h-auto"
+              src="./img/projects/mobicare-app.png"
+              alt=""
+            />
+            <div class="tags flex mb-7">
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Mobile
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Medical
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Product Design
+              </button>
+            </div>
+            <div class="mb-9">
+              <h2 class="text-2xl font-medium">
+                MobiCare
+              </h2>
+            </div>
+
+            <div class="main-stats flex justify-between mb-12">
+              <div class="left-stat">
+                <div class="text-caption-purple">
+                  MobiCare allows patients to receive treatment and consultations remotely, using technology such as video conferencing, phone calls, and messaging.
+                </div>
+              </div>
+            </div>
+
+            <div class="button-block">
+              <a href="">
+                <button
+                class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7"
+              >
+              <a href="./mobicare-case-study.html">View Case Study &rarr;</a>  
+              </button>
+              </a>
+              
+            </div>
+          </div>
+
+          <div class="mini-project xs:w-full sm:w-full w-1/2">
+            <div class="text-grey mb-4">2019</div>
+            <img
+              class="rounded-sm mb-3 w-full h-auto"
+              src="./img/projects/credence-app.png"
+              alt=""
+            />
+            <div class="tags flex mb-7">
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                User Interface 
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Dashboard
+              </button>
+              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
+                Fintech
+              </button>
+            </div>
+            <div class="mb-9">
+              <h2 class="text-2xl font-medium">
+                Credence
+              </h2>
+            </div>
+
+            <div class="main-stats flex justify-between mb-12">
+              <div class="left-stat">
+                <div class="text-caption-purple">
+                  An intuitive, accessible, and visually appealing online dashboard that empowers customers to manage their finances efficiently.
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="button-block">
+              <a href="">
+                <button
+                class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7"
+              >
+              <a href="./credence-ui.html">View Case Study &rarr;</a>  
+              </button>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END OF MAIN PORTFOLIO SECTION -->
+
+      <section class="skillset">
+        <h1 class="text-primary text-5xl font-medium tracking-tightest mb-5">
+            My Skillset
+        </h1>
+        <div class="text-caption-purple mb-16">
+          I always bring together the proper methods and tools to achieve the
+          best possible outcomes.
+        </div>
+
+        <div class="miniblock flex mb-8">
+          <img src="./img/Pen.png" alt="pen" />
+          <h2 class="mt-1 ml-1">UI & UX Design</h2>
+        </div>
+
+        <div class="miniskillset flex-wrap sm:flex-col md:flex-wrap lg:flex-row justify-between mb-20">
+          <button class="tag bg-tag-blue rounded-sm px-2 py-1.5 mr-2 mb-2 text-sm">
+            Design Thinking
+          </button>
+          <button class="tag mb-2 bg-tag-blue rounded-sm px-2 py-1.5 mr-2 text-sm">
+            Wireframing
+          </button>
+          <button class="tag mb-2 bg-tag-blue rounded-sm px-2 py-1.5 mr-2 text-sm">
+            User Research
+          </button>
+          <button class="tag mb-2 bg-tag-blue rounded-sm px-2 py-1.5 mr-2 text-sm">
+            Visual Design
+          </button>
+          <button class="tag mb-2 bg-tag-blue rounded-sm px-2 py-1.5 mr-2 text-sm">
+            Responsive Design
+          </button>
+          <button class="tag mb-2 bg-tag-blue rounded-sm px-2 py-1.5 mr-2 text-sm">
+            A/B Testing
+          </button>
+          <button class="tag mb-2 bg-tag-blue rounded-sm px-2 py-1.5 mr-2 text-sm">
+            Prototyping
+          </button>
+          <button class="tag mb-2 bg-tag-blue rounded-sm px-2 py-1.5 mr-2 text-sm">
+            Design System
+          </button>
+          <button class="tag mb-2 bg-tag-blue rounded-sm px-2 py-1.5 mr-2 text-sm">
+            Agile
+          </button>
+        </div>
+
+        <div class="miniblock flex mb-9">
+          <img src="./img/Briefcase.png" alt="pen" />
+          <h2 class="mt-1 ml-1">Tools</h2>
+        </div>
+
+        <div class="trade-tools flex xs:flex-wrap sm:flex-wrap justify-between mb-28">
+          <div class="subskill flex">
+            <div class="skill-icon mr-3">
+              <img src="./img/devicon_figma.svg" title="figma" alt="" />
+            </div>
+            <div class="skill-info">
+              <div class="skill-text">Figma</div>
+              <div
+                class="font-source text-grayish skill-sub-text text-sm opacity-40"
+              >
+                Interface Design Tool
+              </div>
+            </div>
+          </div>
+          <div class="subskill flex">
+            <div class="skill-icon mr-3">
+              <img src="./img/circum_penpot.png" title="penpot" alt="" />
+            </div>
+            <div class="skill-info">
+              <div class="skill-text">Penpot</div>
+              <div
+                class="font-source text-grayish skill-sub-text text-sm opacity-40"
+              >
+                Interface Design Tool
+              </div>
+            </div>
+          </div>
+          <div class="subskill flex">
+            <div class="skill-icon mr-3">
+              <img src="./img/devicon_jira-wordmark.png" title="Jira" alt="" />
+            </div>
+            <div class="skill-info">
+              <div class="skill-text">Jira</div>
+              <div
+                class="font-source text-grayish skill-sub-text text-sm opacity-40"
+              >
+                Productivity Tool
+              </div>
+            </div>
+          </div>
+          <div class="subskill flex">
+            <div class="skill-icon mr-3">
+              <img src="./img/devicon_trello.png" title="trello" alt="" />
+            </div>
+            <div class="skill-info">
+              <div class="skill-text">Trello</div>
+              <div
+                class="font-source text-grayish skill-sub-text text-sm opacity-40"
+              >
+                Productivity Tool
+              </div>
+            </div>
+          </div>
+          <div class="subskill flex">
+            <div class="skill-icon mr-3">
+              <img src="./img/devicon_slack.png" title="slack" alt="" />
+            </div>
+            <div class="skill-info">
+              <div class="skill-text">Slack</div>
+              <div
+                class="font-source text-grayish skill-sub-text text-sm opacity-40"
+              >
+                Productivity Tool
+              </div>
+            </div>
+          </div>
+          <div class="subskill flex">
+            <div class="skill-icon mr-3">
+              <img src="./img/logos_html-5.png" title="html5" alt="" />
+            </div>
+            <div class="skill-info">
+              <div class="skill-text">Html & Css</div>
+              <div
+                class="font-source text-grayish skill-sub-text text-sm opacity-40"
+              >
+                Interface DesignTool
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END OF SKILLSET SECTION -->
+
+    
+    </div>
+    <!-- END OF MAIN CONTAINER SECTION -->
+
+    <section class="contact-me bg-tag-blue ">
+        <div class="container-class container overflow-hidden mx-auto py-20">
+            <div class=" flex xs:flex-col sm:flex-col md:flex-row justify-between">
+                <div class="contact-form">
+                    <h1 class="text-primary text-5xl font-medium tracking-tightest pb-16">Let's work together</h1>
+                    <div class="mini-text font-epilogue text-caption-purple pb-8">
+                        If you have a project or a job opportunity in mind, I would like to hear from you.
+                    </div>
+                    <div class="social-media">
+                        <div class="email bg-bat-black rounded-lg mb-5">
+                            <div class="social-box flex py-2 px-3">
+                                <div class="email-icon bg-subtle-grey rounded-full p-3">
+                                    <div><i class="fa-regular fa-envelope"></i></div>
+                                </div>
+                                <div class="email-text ml-2 pt-2.5">Onyiksa@gmail.com</div>
+                                <div class="email-arrow ml-2 pt-2.5 text-xl"> &gt;</div>
+                            </div>
+                        </div>
+                        <div class="email bg-bat-black rounded-lg mb-5">
+                            <div class="social-box flex py-2 px-3">
+                                <div class="email-icon bg-subtle-grey rounded-full p-3">
+                                    <div><i class="fa-brands fa-linkedin-in"></i></div>
+                                </div>
+                                <div class="email-text ml-2 pt-2.5">Linkedin</div>
+                                <div class="email-arrow ml-2 pt-2.5 text-xl"> &gt;</div>
+                            </div>
+                        </div>
+                        <div class="email bg-bat-black rounded-lg mb-5">
+                            <div class="social-box flex py-2 px-3">
+                                <div class="email-icon bg-subtle-grey rounded-full p-3">
+                                    <div><i class="fa-brands fa-x-twitter"></i></div>
+                                </div>
+                                <div class="email-text ml-2 pt-2.5">Onyiksa@gmail.com</div>
+                                <div class="email-arrow ml-2 pt-2.5 text-xl"> &gt;</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="button-block mt-20">
+                        <button class="bg-primary custom-text text-white font-bold rounded-3xl px-6 py-2 mr-4">
+                            Drop a message
+                        </button>
+                        <button class="text-primary">
+                            View Resume
+                        </button>
+                    </div>
+                </div>
+                <div class="caption-img">
+                    <img title="audrey-contact" src="./img/audrey-contact.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF CONTACT ME SECTION -->
+
+  
+    <script src="https://kit.fontawesome.com/3e3fa515ff.js" crossorigin="anonymous"></script>
+    <script>
+      document.getElementById("menu-toggle").addEventListener("click", function () {
+        let menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+    });
+      // document
+      // .getElementById("menu-toggle")
+      // .addEventListener("click", function () {
+      //   document.getElementById("mobile-menu").classList.toggle("hidden");
+      //   });
+    </script>
+  </body>
+</html>

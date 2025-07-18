@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme{
+    --color-primary: #b550f8;
+    --color-grey: #f7f3f3;
+    --color-grayish: #e3e8ed;
+    --color-tag-blue: #172135;
+    --color-caption-purple: #ab9eb8;
+    --color-subtle-purple: #b550f8;
+    --font-sans: 'Poppins', san-serif;
+    --font-epilogue: 'Epilogue', serif;
+    --tracking-tightest: -3px;
+    --font-source: "Source Sans 3", serif;
+    --color-bat-black: #1e1a23;
+    --color-subtle-grey: #302928;
+    --breakpoint-xs: 20rem;
+}
+
+body{
+    /* min-width: 48rem; */
+    background-color: #141217;
+    color: white;
+}
+
+.nav-links{
+    font-family: Epilogue;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.custom-text{
+    font-family: var(--font-sans);
+}
+
+.epilogue{
+    font-family: var(--font-epilogue);
+}
